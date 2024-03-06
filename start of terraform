@@ -1,0 +1,13 @@
+provider "aws" { #Provide the Service like "aws" "azure" or "GCP"
+    region = "us-east-1"  # Set your desired AWS region
+}
+
+
+resource "aws_instance" "logan" {
+    ami = "ami-07761f3ae34c4478d" # Image of the OS for EC2
+    instance_type = "t2.micro" # Cheapest and free under the aws free-tier and does the base computation
+    subnet_id = "subnet-0a8c2b8941c932bcd" # if Default VPC is not present of deleted then specifying is not worth it and if the subnet is not present then create the subnet under default vpc 
+    key_name = "Logan_Excon" # key pair 
+}
+
+# this is the basic 
