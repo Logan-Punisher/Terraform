@@ -1,5 +1,4 @@
-provider "aws" { #Provide the Service like "aws" "azure" or "GCP"
-    region = "us-east-1"  # Set your desired AWS region
+provider "aws" { #Provide the Service like "aws" "azure" or "GCP"  region = "us-east-1"  # Set your desired AWS region
 }
 
 
@@ -121,4 +120,6 @@ resource "aws_instance" "server" {
     }
   
 }
+
+#terraform Workspace
 
